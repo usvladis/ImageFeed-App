@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		218880F62C245C2A0032D98E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 218880F52C245C2A0032D98E /* Kingfisher */; };
+		218880F92C245C430032D98E /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 218880F82C245C430032D98E /* ProgressHUD */; };
 		21D49D8B2C00B97D004D1818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49D8A2C00B97D004D1818 /* AppDelegate.swift */; };
 		21D49D8D2C00B97D004D1818 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49D8C2C00B97D004D1818 /* SceneDelegate.swift */; };
-		21D49D8F2C00B97D004D1818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49D8E2C00B97D004D1818 /* ViewController.swift */; };
+		21D49D8F2C00B97D004D1818 /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49D8E2C00B97D004D1818 /* WeddingViewController.swift */; };
 		21D49D922C00B97D004D1818 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 21D49D912C00B97D004D1818 /* Base */; };
 		21D49D952C00B97D004D1818 /* WeddingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21D49D932C00B97D004D1818 /* WeddingApp.xcdatamodeld */; };
 		21D49D972C00B97F004D1818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D49D962C00B97F004D1818 /* Assets.xcassets */; };
@@ -17,6 +19,10 @@
 		21D49DA52C00B980004D1818 /* WeddingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DA42C00B980004D1818 /* WeddingAppTests.swift */; };
 		21D49DAF2C00B980004D1818 /* WeddingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DAE2C00B980004D1818 /* WeddingAppUITests.swift */; };
 		21D49DB12C00B980004D1818 /* WeddingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DB02C00B980004D1818 /* WeddingAppUITestsLaunchTests.swift */; };
+		21D49DC12C00BC88004D1818 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DC02C00BC88004D1818 /* TableViewCell.swift */; };
+		21D49DC42C0A0EF2004D1818 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DC32C0A0EF2004D1818 /* NetworkClient.swift */; };
+		21D49DC62C0A0F00004D1818 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DC52C0A0F00004D1818 /* Constants.swift */; };
+		21D49DC92C0B3339004D1818 /* UploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DC82C0B3339004D1818 /* UploadService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +46,7 @@
 		21D49D872C00B97D004D1818 /* WeddingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D49D8A2C00B97D004D1818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21D49D8C2C00B97D004D1818 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21D49D8E2C00B97D004D1818 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21D49D8E2C00B97D004D1818 /* WeddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingViewController.swift; sourceTree = "<group>"; };
 		21D49D912C00B97D004D1818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21D49D942C00B97D004D1818 /* WeddingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeddingApp.xcdatamodel; sourceTree = "<group>"; };
 		21D49D962C00B97F004D1818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +57,10 @@
 		21D49DAA2C00B980004D1818 /* WeddingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeddingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D49DAE2C00B980004D1818 /* WeddingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingAppUITests.swift; sourceTree = "<group>"; };
 		21D49DB02C00B980004D1818 /* WeddingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		21D49DC02C00BC88004D1818 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		21D49DC32C0A0EF2004D1818 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		21D49DC52C0A0F00004D1818 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		21D49DC82C0B3339004D1818 /* UploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218880F62C245C2A0032D98E /* Kingfisher in Frameworks */,
+				218880F92C245C430032D98E /* ProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,9 @@
 		21D49D7E2C00B97D004D1818 = {
 			isa = PBXGroup;
 			children = (
+				21D49DC72C0B330D004D1818 /* Upload Service */,
+				21D49DC22C0A0ECE004D1818 /* Network Client */,
+				21D49DBD2C00B9C4004D1818 /* Controllers */,
 				21D49D892C00B97D004D1818 /* WeddingApp */,
 				21D49DA32C00B980004D1818 /* WeddingAppTests */,
 				21D49DAD2C00B980004D1818 /* WeddingAppUITests */,
@@ -103,7 +118,6 @@
 			children = (
 				21D49D8A2C00B97D004D1818 /* AppDelegate.swift */,
 				21D49D8C2C00B97D004D1818 /* SceneDelegate.swift */,
-				21D49D8E2C00B97D004D1818 /* ViewController.swift */,
 				21D49D902C00B97D004D1818 /* Main.storyboard */,
 				21D49D962C00B97F004D1818 /* Assets.xcassets */,
 				21D49D982C00B97F004D1818 /* LaunchScreen.storyboard */,
@@ -130,6 +144,32 @@
 			path = WeddingAppUITests;
 			sourceTree = "<group>";
 		};
+		21D49DBD2C00B9C4004D1818 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21D49D8E2C00B97D004D1818 /* WeddingViewController.swift */,
+				21D49DC02C00BC88004D1818 /* TableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		21D49DC22C0A0ECE004D1818 /* Network Client */ = {
+			isa = PBXGroup;
+			children = (
+				21D49DC32C0A0EF2004D1818 /* NetworkClient.swift */,
+				21D49DC52C0A0F00004D1818 /* Constants.swift */,
+			);
+			path = "Network Client";
+			sourceTree = "<group>";
+		};
+		21D49DC72C0B330D004D1818 /* Upload Service */ = {
+			isa = PBXGroup;
+			children = (
+				21D49DC82C0B3339004D1818 /* UploadService.swift */,
+			);
+			path = "Upload Service";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +186,10 @@
 			dependencies = (
 			);
 			name = WeddingApp;
+			packageProductDependencies = (
+				218880F52C245C2A0032D98E /* Kingfisher */,
+				218880F82C245C430032D98E /* ProgressHUD */,
+			);
 			productName = WeddingApp;
 			productReference = 21D49D872C00B97D004D1818 /* WeddingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +262,10 @@
 				Base,
 			);
 			mainGroup = 21D49D7E2C00B97D004D1818;
+			packageReferences = (
+				218880F42C245C2A0032D98E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				218880F72C245C430032D98E /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+			);
 			productRefGroup = 21D49D882C00B97D004D1818 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,10 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21D49D8F2C00B97D004D1818 /* ViewController.swift in Sources */,
+				21D49D8F2C00B97D004D1818 /* WeddingViewController.swift in Sources */,
 				21D49D8B2C00B97D004D1818 /* AppDelegate.swift in Sources */,
+				21D49DC12C00BC88004D1818 /* TableViewCell.swift in Sources */,
 				21D49D952C00B97D004D1818 /* WeddingApp.xcdatamodeld in Sources */,
+				21D49DC92C0B3339004D1818 /* UploadService.swift in Sources */,
+				21D49DC62C0A0F00004D1818 /* Constants.swift in Sources */,
 				21D49D8D2C00B97D004D1818 /* SceneDelegate.swift in Sources */,
+				21D49DC42C0A0EF2004D1818 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -429,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -454,6 +506,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,9 +514,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.usvladis.WeddingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -482,6 +539,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,9 +547,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.usvladis.WeddingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -611,6 +673,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		218880F42C245C2A0032D98E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+		218880F72C245C430032D98E /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = exactVersion;
+				version = 13.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		218880F52C245C2A0032D98E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 218880F42C245C2A0032D98E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		218880F82C245C430032D98E /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 218880F72C245C430032D98E /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		21D49D932C00B97D004D1818 /* WeddingApp.xcdatamodeld */ = {
