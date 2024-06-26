@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		218880F62C245C2A0032D98E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 218880F52C245C2A0032D98E /* Kingfisher */; };
-		218880F92C245C430032D98E /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 218880F82C245C430032D98E /* ProgressHUD */; };
+		218881092C2B16B50032D98E /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 218881082C2B16B50032D98E /* ProgressHUD */; };
+		2188810B2C2B16F10032D98E /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188810A2C2B16F10032D98E /* PhotoData.swift */; };
+		2188810E2C2B17D60032D98E /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188810D2C2B17D60032D98E /* ProgressHUD.swift */; };
+		218881102C2B23970032D98E /* DeleteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188810F2C2B23970032D98E /* DeleteService.swift */; };
+		218881132C2C22130032D98E /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218881122C2C22130032D98E /* AlertPresenter.swift */; };
 		21D49D8B2C00B97D004D1818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49D8A2C00B97D004D1818 /* AppDelegate.swift */; };
 		21D49D8D2C00B97D004D1818 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49D8C2C00B97D004D1818 /* SceneDelegate.swift */; };
 		21D49D8F2C00B97D004D1818 /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49D8E2C00B97D004D1818 /* WeddingViewController.swift */; };
@@ -20,7 +24,7 @@
 		21D49DAF2C00B980004D1818 /* WeddingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DAE2C00B980004D1818 /* WeddingAppUITests.swift */; };
 		21D49DB12C00B980004D1818 /* WeddingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DB02C00B980004D1818 /* WeddingAppUITestsLaunchTests.swift */; };
 		21D49DC12C00BC88004D1818 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DC02C00BC88004D1818 /* TableViewCell.swift */; };
-		21D49DC42C0A0EF2004D1818 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DC32C0A0EF2004D1818 /* NetworkClient.swift */; };
+		21D49DC42C0A0EF2004D1818 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DC32C0A0EF2004D1818 /* PhotoService.swift */; };
 		21D49DC62C0A0F00004D1818 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DC52C0A0F00004D1818 /* Constants.swift */; };
 		21D49DC92C0B3339004D1818 /* UploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D49DC82C0B3339004D1818 /* UploadService.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2188810A2C2B16F10032D98E /* PhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
+		2188810D2C2B17D60032D98E /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		2188810F2C2B23970032D98E /* DeleteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteService.swift; sourceTree = "<group>"; };
+		218881122C2C22130032D98E /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
 		21D49D872C00B97D004D1818 /* WeddingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D49D8A2C00B97D004D1818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21D49D8C2C00B97D004D1818 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +66,7 @@
 		21D49DAE2C00B980004D1818 /* WeddingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingAppUITests.swift; sourceTree = "<group>"; };
 		21D49DB02C00B980004D1818 /* WeddingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		21D49DC02C00BC88004D1818 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		21D49DC32C0A0EF2004D1818 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		21D49DC32C0A0EF2004D1818 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		21D49DC52C0A0F00004D1818 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		21D49DC82C0B3339004D1818 /* UploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				218880F62C245C2A0032D98E /* Kingfisher in Frameworks */,
-				218880F92C245C430032D98E /* ProgressHUD in Frameworks */,
+				218881092C2B16B50032D98E /* ProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +98,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2188810C2C2B17BF0032D98E /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2188810D2C2B17D60032D98E /* ProgressHUD.swift */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		218881112C2C21F60032D98E /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				218881122C2C22130032D98E /* AlertPresenter.swift */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
 		21D49D7E2C00B97D004D1818 = {
 			isa = PBXGroup;
 			children = (
-				21D49DC72C0B330D004D1818 /* Upload Service */,
-				21D49DC22C0A0ECE004D1818 /* Network Client */,
-				21D49DBD2C00B9C4004D1818 /* Controllers */,
+				218881112C2C21F60032D98E /* AlertController */,
+				2188810C2C2B17BF0032D98E /* ProgressHUD */,
+				21D49DC22C0A0ECE004D1818 /* Services */,
+				21D49DBD2C00B9C4004D1818 /* WeddingViewController */,
 				21D49D892C00B97D004D1818 /* WeddingApp */,
 				21D49DA32C00B980004D1818 /* WeddingAppTests */,
 				21D49DAD2C00B980004D1818 /* WeddingAppUITests */,
@@ -144,30 +169,25 @@
 			path = WeddingAppUITests;
 			sourceTree = "<group>";
 		};
-		21D49DBD2C00B9C4004D1818 /* Controllers */ = {
+		21D49DBD2C00B9C4004D1818 /* WeddingViewController */ = {
 			isa = PBXGroup;
 			children = (
 				21D49D8E2C00B97D004D1818 /* WeddingViewController.swift */,
 				21D49DC02C00BC88004D1818 /* TableViewCell.swift */,
 			);
-			path = Controllers;
+			path = WeddingViewController;
 			sourceTree = "<group>";
 		};
-		21D49DC22C0A0ECE004D1818 /* Network Client */ = {
+		21D49DC22C0A0ECE004D1818 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				21D49DC32C0A0EF2004D1818 /* NetworkClient.swift */,
+				21D49DC32C0A0EF2004D1818 /* PhotoService.swift */,
 				21D49DC52C0A0F00004D1818 /* Constants.swift */,
-			);
-			path = "Network Client";
-			sourceTree = "<group>";
-		};
-		21D49DC72C0B330D004D1818 /* Upload Service */ = {
-			isa = PBXGroup;
-			children = (
+				2188810A2C2B16F10032D98E /* PhotoData.swift */,
 				21D49DC82C0B3339004D1818 /* UploadService.swift */,
+				2188810F2C2B23970032D98E /* DeleteService.swift */,
 			);
-			path = "Upload Service";
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +208,7 @@
 			name = WeddingApp;
 			packageProductDependencies = (
 				218880F52C245C2A0032D98E /* Kingfisher */,
-				218880F82C245C430032D98E /* ProgressHUD */,
+				218881082C2B16B50032D98E /* ProgressHUD */,
 			);
 			productName = WeddingApp;
 			productReference = 21D49D872C00B97D004D1818 /* WeddingApp.app */;
@@ -264,7 +284,7 @@
 			mainGroup = 21D49D7E2C00B97D004D1818;
 			packageReferences = (
 				218880F42C245C2A0032D98E /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				218880F72C245C430032D98E /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				218881072C2B16B50032D98E /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = 21D49D882C00B97D004D1818 /* Products */;
 			projectDirPath = "";
@@ -311,12 +331,16 @@
 			files = (
 				21D49D8F2C00B97D004D1818 /* WeddingViewController.swift in Sources */,
 				21D49D8B2C00B97D004D1818 /* AppDelegate.swift in Sources */,
+				2188810B2C2B16F10032D98E /* PhotoData.swift in Sources */,
 				21D49DC12C00BC88004D1818 /* TableViewCell.swift in Sources */,
 				21D49D952C00B97D004D1818 /* WeddingApp.xcdatamodeld in Sources */,
 				21D49DC92C0B3339004D1818 /* UploadService.swift in Sources */,
+				218881102C2B23970032D98E /* DeleteService.swift in Sources */,
 				21D49DC62C0A0F00004D1818 /* Constants.swift in Sources */,
 				21D49D8D2C00B97D004D1818 /* SceneDelegate.swift in Sources */,
-				21D49DC42C0A0EF2004D1818 /* NetworkClient.swift in Sources */,
+				2188810E2C2B17D60032D98E /* ProgressHUD.swift in Sources */,
+				21D49DC42C0A0EF2004D1818 /* PhotoService.swift in Sources */,
+				218881132C2C22130032D98E /* AlertPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,12 +707,12 @@
 				minimumVersion = 7.12.0;
 			};
 		};
-		218880F72C245C430032D98E /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+		218881072C2B16B50032D98E /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
 			requirement = {
-				kind = exactVersion;
-				version = 13.6.1;
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.6.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -699,9 +723,9 @@
 			package = 218880F42C245C2A0032D98E /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		218880F82C245C430032D98E /* ProgressHUD */ = {
+		218881082C2B16B50032D98E /* ProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 218880F72C245C430032D98E /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			package = 218881072C2B16B50032D98E /* XCRemoteSwiftPackageReference "ProgressHUD" */;
 			productName = ProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */

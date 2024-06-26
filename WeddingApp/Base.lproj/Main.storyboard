@@ -20,9 +20,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="774"/>
                                 <color key="backgroundColor" name="YPBlack"/>
                                 <color key="tintColor" name="YPBlack"/>
-                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" name="YPBlack"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="237" id="RG5-pJ-UjU" customClass="TableViewCell" customModule="WeddingApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="237" id="RG5-pJ-UjU" customClass="TableViewCell" customModule="WeddingApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="237"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RG5-pJ-UjU" id="Rt1-lk-aQT">

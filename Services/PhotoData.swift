@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct PhotoData: Codable{
+    var items: [PhotoItems]
+}
+
+struct PhotoItems: Codable{
+    let id: String
+    let createdByName: String
+    let rawLink: String
+    let created: String
+    var liked: Bool
+    var likesCount: Int
+}

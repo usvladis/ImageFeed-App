@@ -10,12 +10,25 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
 
-
+    let userDefaultsKey = "userHash"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        generateUserHashIfNeeded()
         return true
+    }
+    
+    private func generateUserHashIfNeeded() {
+        if UserDefaults.standard.string(forKey: userDefaultsKey) == nil {
+            let userHash = Int64.random(in: 1..<Int64.max)
+            UserDefaults.standard.set(userHash, forKey: userDefaultsKey)
+            print("Generated new userHash: \(userHash)")
+        } else {
+            let userHash = UserDefaults.standard.string(forKey: userDefaultsKey)!
+            print("Existing userHash: \(userHash)")
+        }
     }
 
     // MARK: UISceneSession Lifecycle

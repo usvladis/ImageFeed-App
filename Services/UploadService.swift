@@ -14,7 +14,7 @@ class UploadService {
     
     let uploadURL = "http://45.137.105.74/api/v1/storage/upload"
     
-    func uploadPhoto(image: UIImage, createdByName: String, userHash: String, completion: @escaping (Result<String, Error>) -> Void) {
+    func uploadPhoto(image: UIImage, createdByName: String, userHash: Int, completion: @escaping (Result<String, Error>) -> Void) {
         guard let url = URL(string: uploadURL) else {
             completion(.failure(NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
             return
@@ -27,7 +27,7 @@ class UploadService {
         request.setValue("wyrTQzHUQZyu8WQrg9BmyDrMS8VdqKFW7q61Tede", forHTTPHeaderField: "Authentication")
         
         let boundary = UUID().uuidString
-        let fullData = createBody(with: image, boundary: boundary, createdByName: createdByName, userHash: userHash)
+        let fullData = createBody(with: image, boundary: boundary, createdByName: createdByName, userHash: String(userHash))
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         
         URLSession.shared.uploadTask(with: request, from: fullData) { data, response, error in

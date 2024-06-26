@@ -7,18 +7,7 @@
 
 import Foundation
 import UIKit
-struct PhotoData: Codable{
-    var items: [PhotoItems]
-}
 
-struct PhotoItems: Codable{
-    let id: String
-    let createdByName: String
-    let rawLink: String
-    let created: String
-    var liked: Bool
-    var likesCount: Int
-}
 
 class PhotoService{
     static let shared = PhotoService()
@@ -26,13 +15,13 @@ class PhotoService{
     
     let baseURL = "http://45.137.105.74/api/v1/storage/pagination"
     
-    func fetchPhoto(userHash: String, page: Int = 1, onPage: Int = 50, completion: @escaping (Result<PhotoData, Error>) -> Void)  {
+    func fetchPhoto(userHash: Int, page: Int = 1, onPage: Int = 50, completion: @escaping (Result<PhotoData, Error>) -> Void)  {
         guard var urlComponents = URLComponents(string: baseURL) else {
             completion(.failure(NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
             return
         }
         urlComponents.queryItems = [
-            URLQueryItem(name: "userHash", value: userHash),
+            URLQueryItem(name: "userHash", value: String(userHash)),
             URLQueryItem(name: "page", value: String(page)),
             URLQueryItem(name: "onPage", value: String(onPage))
         ]
